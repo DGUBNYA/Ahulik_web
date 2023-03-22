@@ -1,0 +1,30 @@
+.NavBar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 15vh;
+  width: 100vw;
+  background: #fff;
+  box-shadow: 2px 8px 10px #00000048;
+  .LOGO {
+    width: 200px;
+    height: auto;
+  }
+  .NavLink {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+  }
+  & a {
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: "TubicBlack";
+    color: var(--main-color);
+  }
+  & a:hover {
+    color: var(--Secondery-color);
+  }
+}

@@ -1,0 +1,84 @@
+:root {
+  --main-color: #142b14;
+  --Secondery-color: #8cb334;
+  --BG-color: #e6ede2;
+}
+
+.NavBar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 15vh;
+  width: 100vw;
+  background: #fff;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2823529412);
+}
+.NavBar .LOGO {
+  width: 200px;
+  height: auto;
+}
+.NavBar .NavLink {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 2rem;
+}
+.NavBar a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "TubicBlack";
+  color: var(--main-color);
+}
+.NavBar a:hover {
+  color: var(--Secondery-color);
+}
+
+.Cover {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Cover .CoverImg {
+  height: 45rem;
+  width: auto;
+  margin-top: 12rem;
+}
+.Cover .CoverText {
+  margin-top: 12rem;
+}
+.Cover .CoverText h2 {
+  font-family: "TubicBlack";
+  color: var(--main-color);
+  font-size: 9rem;
+  line-height: 5rem;
+}
+.Cover h3 {
+  font-family: "TubicLight";
+  color: var(--Secondery-color);
+  font-size: 5rem;
+}
+.Cover button {
+  font-family: "TubicBold";
+  font-size: 4rem;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+  border-radius: 50px 0px 50px 50px;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  font-family: "TubicSansCon";
+  background-color: var(--BG-color);
+}/*# sourceMappingURL=main.css.map */
