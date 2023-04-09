@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .Cover {
   height: 100vh;
   width: 100vw;
@@ -31,16 +37,20 @@
     padding: 0.2rem 1.5rem 0.2rem 1.5rem;
     border-radius: 50px 0px 50px 50px;
     border: none;
+    cursor: pointer;
+
+    transition: transform 0.3s;
   }
   & button:hover {
     background-color: var(--Secondery-color);
+    transform: rotate(5deg);
   }
 }
 
 // ABOUT
 
 .About {
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -123,6 +133,9 @@
   align-items: center;
   flex-direction: column;
   padding: 5%;
+  z-index: 1;
+
+  transition: transform 0.3s ease;
   h2 {
     font-family: "TubicBlack";
     color: var(--main-color);
@@ -134,6 +147,9 @@
     font-size: 1.5rem;
     margin-top: 2%;
   }
+}
+.item-1:hover {
+  transform: rotate(5deg);
 }
 .item-2 {
   grid-row: 1/2;
@@ -147,6 +163,14 @@
   padding: 2% 5% 2% 5%;
   border: none;
   border-radius: 25px;
+
+  transition: transform 0.3s ease;
+}
+.item-2:hover {
+  transform: rotate(5deg);
+}
+.item-3:hover {
+  transform: rotate(5deg);
 }
 .item-2,
 .item-3 {
@@ -165,6 +189,24 @@
   grid-row: 2/3;
   grid-column: 4/7;
 }
+
+.btn-invet {
+  font-family: "TubicBold";
+  background-color: var(--Secondery-color);
+  font-size: 2rem;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  margin-top: 2%;
+  color: #fff;
+  border-radius: 25px 0px 25px 25px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--main-color);
+  }
+}
+
 //SWEET FOOD
 
 .Sweet {
@@ -213,6 +255,11 @@
       padding: 2%;
       border: none;
       border-radius: 0px 25px 25px 25px;
+
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: translateY(-8px);
+      }
       h2 {
         font-family: "TubicBold";
         color: var(--Secondery-color);
@@ -225,6 +272,74 @@
         font-size: 1.2rem;
         padding-top: 2%;
         color: var(--main-color);
+      }
+    }
+  }
+}
+
+// TESTIMONIAL
+
+.swiper {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .TestTitel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    i {
+      font-size: 8rem;
+      color: var(--main-color);
+    }
+    h2 {
+      font-family: "TubicBold";
+      font-size: 3rem;
+      color: var(--Secondery-color);
+      text-align: center;
+    }
+  }
+  .swiper-wrapper {
+    margin-top: 3rem;
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      .Test-temp {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 100px;
+          height: 100px;
+          border: none;
+          border-radius: 0px 25px 25px 25px;
+        }
+        .TestShem {
+          margin-right: 1rem;
+          h2 {
+            font-family: "TubicBlack";
+            font-size: 2rem;
+            color: var(--main-color);
+          }
+          h3 {
+            font-family: "TubicLight";
+            font-size: 1.8rem;
+            color: var(--Secondery-color);
+          }
+        }
+      }
+      p {
+        background-color: var(--main-color);
+        width: 600px;
+        color: #fff;
+        font-family: "TubicLight";
+        font-size: 1.6rem;
+        padding: 1rem;
+        margin-top: 2rem;
+        border: none;
+        border-radius: 25px 0px 25px 25px;
       }
     }
   }

@@ -14,6 +14,7 @@
   width: 100vw;
   background: #fff;
   box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2823529412);
+  z-index: 2;
 }
 .NavBar .LOGO {
   width: 200px;
@@ -33,6 +34,12 @@
 }
 .NavBar a:hover {
   color: var(--Secondery-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .Cover {
@@ -69,13 +76,16 @@
   padding: 0.2rem 1.5rem 0.2rem 1.5rem;
   border-radius: 50px 0px 50px 50px;
   border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
 }
 .Cover button:hover {
   background-color: var(--Secondery-color);
+  transform: rotate(5deg);
 }
 
 .About {
-  height: 50vh;
+  height: 70vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -158,6 +168,8 @@
   align-items: center;
   flex-direction: column;
   padding: 5%;
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
 .item-1 h2 {
   font-family: "TubicBlack";
@@ -169,6 +181,10 @@
   text-align: center;
   font-size: 1.5rem;
   margin-top: 2%;
+}
+
+.item-1:hover {
+  transform: rotate(5deg);
 }
 
 .item-2 {
@@ -184,6 +200,15 @@
   padding: 2% 5% 2% 5%;
   border: none;
   border-radius: 25px;
+  transition: transform 0.3s ease;
+}
+
+.item-2:hover {
+  transform: rotate(5deg);
+}
+
+.item-3:hover {
+  transform: rotate(5deg);
 }
 
 .item-2 h2,
@@ -202,6 +227,23 @@
 .item-3 {
   grid-row: 2/3;
   grid-column: 4/7;
+}
+
+.btn-invet {
+  font-family: "TubicBold";
+  background-color: var(--Secondery-color);
+  font-size: 2rem;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  margin-top: 2%;
+  color: #fff;
+  border-radius: 25px 0px 25px 25px;
+  cursor: pointer;
+}
+.btn-invet:hover {
+  background-color: var(--main-color);
 }
 
 .Sweet {
@@ -252,6 +294,12 @@
   padding: 2%;
   border: none;
   border-radius: 0px 25px 25px 25px;
+  transition: transform 0.3s ease;
+}
+.Sweet .SweetBord .Sweet-1:hover,
+.Sweet .SweetBord .Sweet-2:hover,
+.Sweet .SweetBord .Sweet-3:hover {
+  transform: translateY(-8px);
 }
 .Sweet .SweetBord .Sweet-1 h2,
 .Sweet .SweetBord .Sweet-2 h2,
@@ -269,6 +317,72 @@
   font-size: 1.2rem;
   padding-top: 2%;
   color: var(--main-color);
+}
+
+.swiper {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.swiper .TestTitel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.swiper .TestTitel i {
+  font-size: 8rem;
+  color: var(--main-color);
+}
+.swiper .TestTitel h2 {
+  font-family: "TubicBold";
+  font-size: 3rem;
+  color: var(--Secondery-color);
+  text-align: center;
+}
+.swiper .swiper-wrapper {
+  margin-top: 3rem;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+.swiper .swiper-wrapper .swiper-slide .Test-temp {
+  display: flex;
+  justify-content: center;
+}
+.swiper .swiper-wrapper .swiper-slide .Test-temp img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 0px 25px 25px 25px;
+}
+.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem {
+  margin-right: 1rem;
+}
+.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h2 {
+  font-family: "TubicBlack";
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h3 {
+  font-family: "TubicLight";
+  font-size: 1.8rem;
+  color: var(--Secondery-color);
+}
+.swiper .swiper-wrapper .swiper-slide p {
+  background-color: var(--main-color);
+  width: 600px;
+  color: #fff;
+  font-family: "TubicLight";
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 25px 0px 25px 25px;
 }
 
 * {
