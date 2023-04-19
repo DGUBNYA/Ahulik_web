@@ -11,6 +11,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./Fonts/fontbit_css_example.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -133,32 +138,77 @@
         </div>
       </section>
 
-      <section class="swiper mySwiper">
+      <!-- TESTIMOLIAL -->
+      <section class="TESTIMOLIAL">
         <div class="TestTitel">
           <i class="fa-solid fa-face-grin-hearts"></i>
           <h2>אומרים עלינו</h2>
         </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="Test-temp">
-              <img src="./IMAGE/TESTIMONIAL/02.png" />
-              <div class="TestShem">
-                <h2>אושר מקונן</h2>
-                <h3>08.10.22</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="Test-temp">
+                <img src="./IMAGE/TESTIMONIAL/02.png" />
+                <div class="TestShem">
+                  <h2>אושר מקונן</h2>
+                  <h3>08.10.22</h3>
+                </div>
               </div>
+              <p>
+                אוכל מצוין. נקי מסודר. מסעדה משפחתית טעם בייתי. מומלץ בחום. אם
+                מנסים פעם אחת מתמכרים למקום ולבעלים שהוא אחד האנשים הכי נחמדים
+                בעולם. באחריות.
+              </p>
             </div>
-            <p>
-              אוכל מצוין. נקי מסודר. מסעדה משפחתית טעם בייתי. מומלץ בחום. אם
-              מנסים פעם אחת מתמכרים למקום ולבעלים שהוא אחד האנשים הכי נחמדים
-              בעולם. באחריות.
-            </p>
+            <div class="swiper-slide">
+              <div class="Test-temp">
+                <img src="./IMAGE/TESTIMONIAL/03.png" />
+                <div class="TestShem">
+                  <h2>שלמה מנחם</h2>
+                  <h3>10.08.22</h3>
+                </div>
+              </div>
+              <p>
+                הזמנתי משלוח, השירות היה מעולה מהשיחה בטלפון ועד השליח המקסים.
+                האוכל עוד יותר מעולה, אפילו הביאו לי טעימה מהשעועית למרות שלא
+                הזמנתי ככה בשביל לפנק. מזמן לא נתקלתי בהודעת שירות כזו טובה אין
+                עליכם
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="Test-temp">
+                <img src="./IMAGE/TESTIMONIAL/01.png" />
+                <div class="TestShem">
+                  <h2>נינה שטינסקי</h2>
+                  <h3>20.09.22</h3>
+                </div>
+              </div>
+              <p>הרבה זמן לא אכלתי אוכל טעים ומגוון שכזה תודה. ממליצה בחום</p>
+            </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- OLDER -->
+      <section class="Older">
+        <img src="./IMAGE/FOOD/SWEAT2.png" class="OlderImg" />
+        <div class="FormContainer">
+          <h2>הזמינו מקום הטעימות עלינו!</h2>
+          <form class="OlderForm">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <button>שליחה</button>
+          </form>
+        </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
     <script src="./Js/swiper.js"></script>
   </body>
 </html>

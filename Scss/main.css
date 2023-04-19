@@ -105,6 +105,125 @@
   margin-top: 3%;
 }
 
+.TESTIMOLIAL {
+  height: 100vh;
+  width: 100vw;
+}
+
+.TestTitel {
+  height: 15vh;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.TestTitel i {
+  font-size: 8rem;
+  color: var(--main-color);
+}
+.TestTitel h2 {
+  font-family: "TubicBold";
+  font-size: 3rem;
+  color: var(--Secondery-color);
+  text-align: center;
+}
+
+.mySwiper {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mySwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  height: 60vh;
+}
+.mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mySwiper .swiper-wrapper .swiper-slide .Test-temp {
+  display: flex;
+  justify-content: center;
+}
+.mySwiper .swiper-wrapper .swiper-slide .Test-temp img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 0px 25px 25px 25px;
+}
+.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem {
+  margin-right: 1rem;
+}
+.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h2 {
+  font-family: "TubicBlack";
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h3 {
+  font-family: "TubicLight";
+  font-size: 1.8rem;
+  color: var(--Secondery-color);
+}
+.mySwiper .swiper-wrapper .swiper-slide p {
+  background-color: var(--main-color);
+  width: 600px;
+  color: #fff;
+  font-family: "TubicLight";
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 25px 0px 25px 25px;
+}
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  color: var(--main-color);
+}
+.mySwiper .swiper-button-next:hover,
+.mySwiper .swiper-button-prev:hover {
+  color: var(--Secondery-color);
+}
+.mySwiper .swiper-pagination-bullet {
+  width: 25px;
+  height: 25px;
+  background-color: var(--main-color);
+  line-height: 12px;
+}
+.mySwiper .swiper-pagination-bullet:hover {
+  background-color: var(--Secondery-color);
+}
+
+.Older {
+  height: 80vh;
+  width: 100vw;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.Older .OlderImg {
+  height: 600px;
+  width: auto;
+}
+.Older .FormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Older .FormContainer h2 {
+  color: #fff;
+  font-family: "TubicBlack";
+  font-size: 3rem;
+}
+
 .Fevorit {
   height: 100vh;
   width: 100vw;
@@ -119,6 +238,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 15rem;
 }
 .Fevorit .FevoTitel img {
   height: 100px;
@@ -260,6 +380,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 15rem;
 }
 .Sweet .SweTitel img {
   width: auto;
@@ -280,7 +401,8 @@
   justify-content: space-around;
   align-items: center;
   gap: 2rem;
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-bottom: 10rem;
 }
 .Sweet .SweetBord .Sweet-1,
 .Sweet .SweetBord .Sweet-2,
@@ -317,72 +439,6 @@
   font-size: 1.2rem;
   padding-top: 2%;
   color: var(--main-color);
-}
-
-.swiper {
-  height: 80vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.swiper .TestTitel {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-.swiper .TestTitel i {
-  font-size: 8rem;
-  color: var(--main-color);
-}
-.swiper .TestTitel h2 {
-  font-family: "TubicBold";
-  font-size: 3rem;
-  color: var(--Secondery-color);
-  text-align: center;
-}
-.swiper .swiper-wrapper {
-  margin-top: 3rem;
-}
-.swiper .swiper-wrapper .swiper-slide {
-  display: flex;
-  flex-direction: column;
-}
-.swiper .swiper-wrapper .swiper-slide .Test-temp {
-  display: flex;
-  justify-content: center;
-}
-.swiper .swiper-wrapper .swiper-slide .Test-temp img {
-  width: 100px;
-  height: 100px;
-  border: none;
-  border-radius: 0px 25px 25px 25px;
-}
-.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem {
-  margin-right: 1rem;
-}
-.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h2 {
-  font-family: "TubicBlack";
-  font-size: 2rem;
-  color: var(--main-color);
-}
-.swiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h3 {
-  font-family: "TubicLight";
-  font-size: 1.8rem;
-  color: var(--Secondery-color);
-}
-.swiper .swiper-wrapper .swiper-slide p {
-  background-color: var(--main-color);
-  width: 600px;
-  color: #fff;
-  font-family: "TubicLight";
-  font-size: 1.6rem;
-  padding: 1rem;
-  margin-top: 2rem;
-  border: none;
-  border-radius: 25px 0px 25px 25px;
 }
 
 * {

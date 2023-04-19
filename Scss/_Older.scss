@@ -1,0 +1,23 @@
+.Older {
+  height: 80vh;
+  width: 100vw;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  .OlderImg {
+    height: 600px;
+    width: auto;
+  }
+  .FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      color: #fff;
+      font-family: "TubicBlack";
+      font-size: 3rem;
+    }
+  }
+}
