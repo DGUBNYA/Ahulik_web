@@ -24,7 +24,7 @@
         <ul class="NavLink">
           <li><a href="http://">בית</a></li>
           <li><a href="http://">מנות</a></li>
-          <li><a href="http://">הזמנות</a></li>
+          <button><a href="http://">הזמנת מקום</a></button>
         </ul>
       </nav>
     </header>
@@ -36,7 +36,7 @@
         <div class="CoverText">
           <h2>בוחרים</h2>
           <h3>לאכול בריא!</h3>
-          <button>לתפריט</button>
+          <button>לתפריט שלנו</button>
         </div>
       </section>
 
@@ -198,10 +198,20 @@
         <div class="FormContainer">
           <h2>הזמינו מקום הטעימות עלינו!</h2>
           <form class="OlderForm">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <input type="text" id="name" placeholder="שם מלא:" required />
+            <input type="email" id="email" placeholder="מייל:" required />
+            <input type="number" id="phone" placeholder="טלפון:" required />
+            <input
+              type="number"
+              id="person"
+              placeholder="כמות אנשים"
+              required
+            />
+            <textarea
+              id="massage"
+              rows="4"
+              placeholder="משהו ששכחנו?"
+            ></textarea>
             <button>שליחה</button>
           </form>
         </div>
