@@ -1,0 +1,65 @@
+@media all and (max-width: 1200px) {
+  .Cover {
+    .CoverImg {
+      height: 38rem;
+      width: auto;
+      margin-top: 10rem;
+    }
+  }
+  .CoverText {
+    margin-top: 10rem;
+  }
+  //   Food
+
+  .Fevorit {
+    .FevoTitel {
+      margin-top: 12rem;
+    }
+  }
+  .ImgFood {
+    height: 250px;
+    width: 250px;
+  }
+  .ImgFood1 {
+    height: 400px;
+    width: 400px;
+  }
+
+  //   Sweet Food
+
+  .Sweet {
+    .SweTitel {
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    .SweetFood {
+      height: 250px;
+      width: auto;
+    }
+    .SweetBord {
+      gap: 1.8rem;
+      margin-bottom: 5rem;
+      .Sweet-1,
+      .Sweet-2,
+      .Sweet-3 {
+        width: 350px;
+        height: 500px;
+        h2 {
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+//Large devices (laptops/desktops, 992px and up)
+
+@media all and (max-width: 992px) {
+  .Cover {
+    .CoverImg {
+      height: 30rem;
+      width: auto;
+      margin-top: 10rem;
+    }
+  }
+}
