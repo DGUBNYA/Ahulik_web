@@ -24,42 +24,26 @@
     height: 400px;
     width: 400px;
   }
-
-  //   Sweet Food
-
-  .Sweet {
-    .SweTitel {
-      margin-top: 0;
-      margin-bottom: 2rem;
-    }
-    .SweetFood {
-      height: 250px;
-      width: auto;
-    }
-    .SweetBord {
-      gap: 1.8rem;
-      margin-bottom: 5rem;
-      .Sweet-1,
-      .Sweet-2,
-      .Sweet-3 {
-        width: 350px;
-        height: 500px;
-        h2 {
-          padding-top: 1rem;
-        }
-      }
-    }
-  }
 }
+
+//   Sweet Food
 
 //Large devices (laptops/desktops, 992px and up)
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 1024px) {
   .Cover {
     .CoverImg {
       height: 30rem;
       width: auto;
       margin-top: 10rem;
+    }
+  }
+  .item-1 {
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
     }
   }
 }

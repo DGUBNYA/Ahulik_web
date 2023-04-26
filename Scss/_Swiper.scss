@@ -24,8 +24,8 @@
 }
 
 .mySwiper {
-  height: 50vh;
-  width: 50vw;
+  height: 55vh;
+  width: 60vw;
   //   margin-bottom: 7rem;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     margin-top: 4rem;
-    height: 60vh;
+    height: auto;
     .swiper-slide {
       display: flex;
       align-items: center;
@@ -66,7 +66,8 @@
       }
       p {
         background-color: var(--main-color);
-        width: 600px;
+        width: auto;
+
         color: #fff;
         font-family: "TubicLight";
         font-size: 1.6rem;
