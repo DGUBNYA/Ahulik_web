@@ -67,6 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .Cover .CoverImg {
   height: 45rem;
@@ -226,6 +227,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .Older .OlderImg {
@@ -243,14 +245,13 @@
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-
-.OlderForm {
+.Older .FormContainer .OlderForm {
   display: flex;
   flex-direction: column;
   width: 500px;
 }
-.OlderForm input,
-.OlderForm textarea {
+.Older .FormContainer .OlderForm input,
+.Older .FormContainer .OlderForm textarea {
   border: none;
   padding: 1rem;
   margin: 5px 0;
@@ -259,7 +260,7 @@
   color: var(--main-color);
   font-family: "TubicLight";
 }
-.OlderForm button {
+.Older .FormContainer .OlderForm button {
   width: 150px;
   height: 40px;
   border: none;
@@ -272,7 +273,7 @@
   transition: transform 0.3s;
   cursor: pointer;
 }
-.OlderForm button:hover {
+.Older .FormContainer .OlderForm button:hover {
   background-color: #fff;
   color: var(--main-color);
   transform: rotate(5deg);
@@ -287,6 +288,9 @@
   background-color: var(--main-color);
 }
 .Fevorit .FevoTitel {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 3rem;
   gap: 1rem;
 }
@@ -499,38 +503,96 @@
   transform: translateY(-15px);
 }
 
-@media all and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .Cover .CoverImg {
-    height: 38rem;
+    height: 28rem;
     width: auto;
     margin-top: 10rem;
   }
-  .CoverText {
+  .Cover .CoverText {
     margin-top: 10rem;
+  }
+  .Cover .CoverText h2 {
+    font-size: 6rem;
+    line-height: 3.5rem;
+  }
+  .Cover .CoverText h3 {
+    font-size: 3.4rem;
+  }
+  .About .AboutText {
+    font-size: 1.5rem;
   }
   .Fevorit .FevoTitel {
-    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
-  .ImgFood {
-    height: 250px;
-    width: 250px;
-  }
-  .ImgFood1 {
-    height: 400px;
-    width: 400px;
-  }
-}
-@media all and (max-width: 1024px) {
-  .Cover .CoverImg {
-    height: 30rem;
+  .Fevorit .FevoTitel img {
+    height: 7rem;
     width: auto;
-    margin-top: 10rem;
   }
-  .item-1 h2 {
+  .Fevorit .Fevfood .item-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .Fevorit .Fevfood .item-1 .ImgFood1 {
+    height: 250px;
+    width: auto;
+  }
+  .Fevorit .Fevfood .item-1 .item-1-text {
+    align-items: flex-start;
+  }
+  .Fevorit .Fevfood .item-1 .item-1-text h2 {
     font-size: 2.5rem;
   }
-  .item-1 p {
-    font-size: 1.2rem;
+  .Fevorit .Fevfood .item-1 .item-1-text p {
+    text-align: start;
+    font-size: 1.3rem;
+  }
+  .Sweet .SweTitel img {
+    height: 7rem;
+  }
+  .Sweet .SweetBord {
+    gap: 1.5rem;
+  }
+  .Sweet .SweetBord .Sweet-1,
+  .Sweet .SweetBord .Sweet-2,
+  .Sweet .SweetBord .Sweet-3 {
+    width: 280px;
+  }
+  .Sweet .SweetBord .Sweet-1 .SweetFood,
+  .Sweet .SweetBord .Sweet-2 .SweetFood,
+  .Sweet .SweetBord .Sweet-3 .SweetFood {
+    height: 180px;
+  }
+  .Sweet .SweetBord .Sweet-1 h2,
+  .Sweet .SweetBord .Sweet-2 h2,
+  .Sweet .SweetBord .Sweet-3 h2 {
+    font-size: 1.8rem;
+  }
+  .Sweet .SweetBord .Sweet-1 p,
+  .Sweet .SweetBord .Sweet-2 p,
+  .Sweet .SweetBord .Sweet-3 p {
+    font-size: 1.3rem;
+  }
+  .Older .OlderImg {
+    height: 400px;
+  }
+  .Older .FormContainer h2 {
+    font-size: 2rem;
+  }
+  .Older .FormContainer .OlderForm {
+    width: 350px;
+  }
+  .Older .FormContainer .OlderForm input,
+  .Older .FormContainer .OlderForm textarea {
+    font-size: 0.8rem;
+  }
+  .Older .FormContainer .OlderForm button {
+    width: 100px;
+    height: 30px;
+    font-size: 1.5rem;
   }
 }
 * {

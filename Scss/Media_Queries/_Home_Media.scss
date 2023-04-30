@@ -1,49 +1,123 @@
-@media all and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .Cover {
     .CoverImg {
-      height: 38rem;
+      height: 28rem;
       width: auto;
       margin-top: 10rem;
     }
+    .CoverText {
+      margin-top: 10rem;
+      h2 {
+        font-size: 6rem;
+        line-height: 3.5rem;
+      }
+      h3 {
+        font-size: 3.4rem;
+      }
+    }
   }
-  .CoverText {
-    margin-top: 10rem;
+
+  // ABOUT
+  .About {
+    .AboutText {
+      font-size: 1.5rem;
+    }
   }
+
   //   Food
 
   .Fevorit {
     .FevoTitel {
-      margin-top: 12rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      img {
+        height: 7rem;
+        width: auto;
+      }
+    }
+
+    .Fevfood {
+      .item-1 {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem;
+        .ImgFood1 {
+          height: 250px;
+          width: auto;
+        }
+        .item-1-text {
+          align-items: flex-start;
+          h2 {
+            font-size: 2.5rem;
+          }
+          p {
+            text-align: start;
+            font-size: 1.3rem;
+          }
+        }
+      }
     }
   }
-  .ImgFood {
-    height: 250px;
-    width: 250px;
+
+  .Sweet {
+    .SweTitel {
+      img {
+        height: 7rem;
+      }
+    }
+
+    .SweetBord {
+      gap: 1.5rem;
+      .Sweet-1,
+      .Sweet-2,
+      .Sweet-3 {
+        width: 280px;
+        .SweetFood {
+          height: 180px;
+        }
+        h2 {
+          font-size: 1.8rem;
+        }
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
   }
-  .ImgFood1 {
-    height: 400px;
-    width: 400px;
+
+  .Older {
+    .OlderImg {
+      height: 400px;
+    }
+
+    .FormContainer {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .OlderForm {
+        width: 350px;
+        input,
+        textarea {
+          font-size: 0.8rem;
+        }
+        button {
+          width: 100px;
+          height: 30px;
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }
-
 //   Sweet Food
 
 //Large devices (laptops/desktops, 992px and up)
 
-@media all and (max-width: 1024px) {
-  .Cover {
-    .CoverImg {
-      height: 30rem;
-      width: auto;
-      margin-top: 10rem;
-    }
-  }
-  .item-1 {
-    h2 {
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.2rem;
+@media only screen and(max-width:992px) {
+  .TESTIMOLIAL {
+    .TestTitel {
     }
   }
 }
