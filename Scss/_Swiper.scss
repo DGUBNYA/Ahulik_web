@@ -1,102 +1,100 @@
 .TESTIMOLIAL {
   height: 100vh;
   width: 100vw;
-}
-
-.TestTitel {
-  height: 15vh;
-  margin-top: 8rem;
-  margin-bottom: 4rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  //   margin-bottom: 3rem;
-  i {
-    font-size: 8rem;
-    color: var(--main-color);
+  .TestTitel {
+    height: 15vh;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //   margin-bottom: 3rem;
+    i {
+      font-size: 8rem;
+      color: var(--main-color);
+    }
+    h2 {
+      font-family: "TubicBold";
+      font-size: 3rem;
+      color: var(--Secondery-color);
+      text-align: center;
+    }
   }
-  h2 {
-    font-family: "TubicBold";
-    font-size: 3rem;
-    color: var(--Secondery-color);
-    text-align: center;
-  }
-}
 
-.mySwiper {
-  height: 55vh;
-  width: 60vw;
-  //   margin-bottom: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //   flex-direction: column;
-
-  .swiper-wrapper {
+  .mySwiper {
+    height: 55vh;
+    width: 60vw;
+    //   margin-bottom: 7rem;
     display: flex;
     align-items: center;
-    margin-top: 4rem;
-    height: auto;
-    .swiper-slide {
+    justify-content: center;
+    //   flex-direction: column;
+
+    .swiper-wrapper {
       display: flex;
       align-items: center;
-      flex-direction: column;
-      .Test-temp {
+      margin-top: 4rem;
+      height: auto;
+      .swiper-slide {
         display: flex;
-        justify-content: center;
-        img {
-          width: 100px;
-          height: 100px;
-          border: none;
-          border-radius: 0px 25px 25px 25px;
+        align-items: center;
+        flex-direction: column;
+        .Test-temp {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 0px 25px 25px 25px;
+          }
+          .TestShem {
+            margin-right: 1rem;
+            h2 {
+              font-family: "TubicBlack";
+              font-size: 2rem;
+              color: var(--main-color);
+            }
+            h3 {
+              font-family: "TubicLight";
+              font-size: 1.8rem;
+              color: var(--Secondery-color);
+            }
+          }
         }
-        .TestShem {
-          margin-right: 1rem;
-          h2 {
-            font-family: "TubicBlack";
-            font-size: 2rem;
-            color: var(--main-color);
-          }
-          h3 {
-            font-family: "TubicLight";
-            font-size: 1.8rem;
-            color: var(--Secondery-color);
-          }
+        p {
+          background-color: var(--main-color);
+          width: auto;
+
+          color: #fff;
+          font-family: "TubicLight";
+          font-size: 1.6rem;
+          padding: 1rem;
+          margin-top: 2rem;
+          border: none;
+          border-radius: 25px 0px 25px 25px;
         }
       }
-      p {
-        background-color: var(--main-color);
-        width: auto;
 
-        color: #fff;
-        font-family: "TubicLight";
-        font-size: 1.6rem;
-        padding: 1rem;
-        margin-top: 2rem;
-        border: none;
-        border-radius: 25px 0px 25px 25px;
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: var(--main-color);
+        &:hover {
+          color: var(--Secondery-color);
+        }
+      }
+      .swiper-pagination-bullet {
+        width: 25px;
+        height: 25px;
+        // border: 10px solid var(--main-color);
+        background-color: var(--main-color);
+        line-height: 12px;
+        &:hover {
+          background-color: var(--Secondery-color);
+        }
       }
     }
   }
 }
 
 // BTNS
-.mySwiper {
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: var(--main-color);
-    &:hover {
-      color: var(--Secondery-color);
-    }
-  }
-  .swiper-pagination-bullet {
-    width: 25px;
-    height: 25px;
-    // border: 10px solid var(--main-color);
-    background-color: var(--main-color);
-    line-height: 12px;
-    &:hover {
-      background-color: var(--Secondery-color);
-    }
-  }
-}

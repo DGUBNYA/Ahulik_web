@@ -130,8 +130,7 @@
   height: 100vh;
   width: 100vw;
 }
-
-.TestTitel {
+.TESTIMOLIAL .TestTitel {
   height: 15vh;
   margin-top: 8rem;
   margin-bottom: 4rem;
@@ -139,59 +138,58 @@
   flex-direction: column;
   align-items: center;
 }
-.TestTitel i {
+.TESTIMOLIAL .TestTitel i {
   font-size: 8rem;
   color: var(--main-color);
 }
-.TestTitel h2 {
+.TESTIMOLIAL .TestTitel h2 {
   font-family: "TubicBold";
   font-size: 3rem;
   color: var(--Secondery-color);
   text-align: center;
 }
-
-.mySwiper {
+.TESTIMOLIAL .mySwiper {
   height: 55vh;
   width: 60vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mySwiper .swiper-wrapper {
+.TESTIMOLIAL .mySwiper .swiper-wrapper {
   display: flex;
   align-items: center;
   margin-top: 4rem;
   height: auto;
 }
-.mySwiper .swiper-wrapper .swiper-slide {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.mySwiper .swiper-wrapper .swiper-slide .Test-temp {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide .Test-temp {
   display: flex;
   justify-content: center;
 }
-.mySwiper .swiper-wrapper .swiper-slide .Test-temp img {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide .Test-temp img {
   width: 100px;
   height: 100px;
   border: none;
   border-radius: 0px 25px 25px 25px;
 }
-.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem {
   margin-right: 1rem;
 }
-.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h2 {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h2 {
   font-family: "TubicBlack";
   font-size: 2rem;
   color: var(--main-color);
 }
-.mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h3 {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide .Test-temp .TestShem h3 {
   font-family: "TubicLight";
   font-size: 1.8rem;
   color: var(--Secondery-color);
 }
-.mySwiper .swiper-wrapper .swiper-slide p {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide p {
   background-color: var(--main-color);
   width: auto;
   color: #fff;
@@ -202,22 +200,21 @@
   border: none;
   border-radius: 25px 0px 25px 25px;
 }
-
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-button-prev {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-next,
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-prev {
   color: var(--main-color);
 }
-.mySwiper .swiper-button-next:hover,
-.mySwiper .swiper-button-prev:hover {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-next:hover,
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-prev:hover {
   color: var(--Secondery-color);
 }
-.mySwiper .swiper-pagination-bullet {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-pagination-bullet {
   width: 25px;
   height: 25px;
   background-color: var(--main-color);
   line-height: 12px;
 }
-.mySwiper .swiper-pagination-bullet:hover {
+.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-pagination-bullet:hover {
   background-color: var(--Secondery-color);
 }
 
@@ -246,13 +243,14 @@
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.Older .FormContainer .OlderForm {
+
+.OlderForm {
   display: flex;
   flex-direction: column;
   width: 500px;
 }
-.Older .FormContainer .OlderForm input,
-.Older .FormContainer .OlderForm textarea {
+.OlderForm input,
+.OlderForm textarea {
   border: none;
   padding: 1rem;
   margin: 5px 0;
@@ -261,7 +259,7 @@
   color: var(--main-color);
   font-family: "TubicLight";
 }
-.Older .FormContainer .OlderForm button {
+.OlderForm button {
   width: 150px;
   height: 40px;
   border: none;
@@ -274,7 +272,7 @@
   transition: transform 0.3s;
   cursor: pointer;
 }
-.Older .FormContainer .OlderForm button:hover {
+.OlderForm button:hover {
   background-color: #fff;
   color: var(--main-color);
   transform: rotate(5deg);
@@ -504,116 +502,6 @@
   transform: translateY(-15px);
 }
 
-@media all and (max-width: 1200px) {
-  .Cover .CoverImg {
-    margin-top: 10rem;
-  }
-  .CoverText {
-    margin-top: 10rem;
-  }
-  .Fevorit .FevoTitel {
-    margin-top: 12rem;
-  }
-  .ImgFood {
-    height: 250px;
-    width: 250px;
-  }
-  .ImgFood1 {
-    height: 400px;
-    width: 400px;
-  }
-  .SweetBord {
-    justify-content: center;
-  }
-}
-@media all and (max-width: 1024px) {
-  .Cover .CoverImg {
-    margin-top: 10rem;
-  }
-  .item-1 h2 {
-    font-size: 2.5rem;
-  }
-  .item-1 p {
-    font-size: 1.2rem;
-  }
-}
-.Older .FormContainer h2 {
-  font-size: 2rem;
-}
-
-@media all and (max-width: 900px) {
-  .Cover {
-    flex-direction: column;
-  }
-  .Cover .CoverImg {
-    margin-top: 5rem;
-    margin-bottom: 0rem;
-  }
-  .Cover .CoverText {
-    margin-top: 2rem;
-  }
-  .Cover .CoverText h2 {
-    font-size: 9rem;
-    line-height: 5rem;
-  }
-  .Cover h3 {
-    font-size: 5rem;
-  }
-  .Fevorit .FevoTitel img {
-    height: 6rem;
-  }
-  .Fevorit .FevoTitel h2 {
-    font-size: 1.8rem;
-  }
-  .Sweet .SweTitel img {
-    height: 6rem;
-  }
-  .Sweet .SweTitel h2 {
-    font-size: 1.8rem;
-  }
-  .SweetBord {
-    justify-content: center;
-  }
-  .Older {
-    flex-direction: column;
-    height: 100vh;
-    gap: 10px;
-  }
-  .Older .OlderImg {
-    margin-top: 3rem;
-  }
-  .Older .FormContainer h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  .Older .FormContainer .OlderForm {
-    margin-bottom: 5rem;
-  }
-}
-@media all and (max-width: 600px) {
-  .Cover .CoverImg {
-    margin-top: 5rem;
-  }
-  .Cover .CoverText {
-    margin-top: 2rem;
-  }
-  .Cover .CoverText h2 {
-    font-size: 6rem;
-    line-height: 5rem;
-  }
-  .Cover h3 {
-    font-size: 3rem;
-  }
-  .Fevorit .FevoTitel {
-    margin-top: 2rem;
-  }
-  .Fevorit .FevoTitel img {
-    height: 6rem;
-  }
-  .Fevorit .FevoTitel h2 {
-    font-size: 1.8rem;
-  }
-}
 * {
   box-sizing: border-box;
   margin: 0;
