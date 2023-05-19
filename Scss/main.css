@@ -72,7 +72,6 @@
   max-height: 800px;
   min-height: 200px;
   max-width: 50%;
-  min-width: 70%;
   margin-top: 12rem;
 }
 .Cover .CoverText {
@@ -152,14 +151,12 @@
   height: 55vh;
   width: 60vw;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .TESTIMOLIAL .mySwiper .swiper-wrapper {
   display: flex;
   align-items: center;
   margin-top: 4rem;
-  height: auto;
 }
 .TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide {
   display: flex;
@@ -200,21 +197,21 @@
   border: none;
   border-radius: 25px 0px 25px 25px;
 }
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-next,
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-prev {
+.TESTIMOLIAL .mySwiper .swiper-button-next,
+.TESTIMOLIAL .mySwiper .swiper-button-prev {
   color: var(--main-color);
 }
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-next:hover,
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-button-prev:hover {
+.TESTIMOLIAL .mySwiper .swiper-button-next:hover,
+.TESTIMOLIAL .mySwiper .swiper-button-prev:hover {
   color: var(--Secondery-color);
 }
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-pagination-bullet {
+.TESTIMOLIAL .mySwiper .swiper-pagination-bullet {
   width: 25px;
   height: 25px;
   background-color: var(--main-color);
   line-height: 12px;
 }
-.TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-pagination-bullet:hover {
+.TESTIMOLIAL .mySwiper .swiper-pagination-bullet:hover {
   background-color: var(--Secondery-color);
 }
 
@@ -512,14 +509,6 @@
   .Fevorit .FevoTitel {
     margin-top: 12rem;
   }
-  .ImgFood {
-    height: 250px;
-    width: 250px;
-  }
-  .ImgFood1 {
-    height: 400px;
-    width: 400px;
-  }
   .SweetBord {
     justify-content: center;
   }
@@ -557,6 +546,9 @@
   .Cover h3 {
     font-size: 5rem;
   }
+  .Fevorit .FevoTitel {
+    margin-top: 3rem;
+  }
   .Fevorit .FevoTitel img {
     height: 6rem;
   }
@@ -590,17 +582,30 @@
 }
 @media all and (max-width: 600px) {
   .Cover .CoverImg {
+    max-width: 65%;
     margin-top: 5rem;
   }
   .Cover .CoverText {
     margin-top: 2rem;
   }
   .Cover .CoverText h2 {
-    font-size: 6rem;
+    font-size: 7rem;
     line-height: 5rem;
   }
-  .Cover h3 {
+  .Cover .CoverText h3 {
+    font-size: 4rem;
+  }
+  .Cover .CoverText button {
+    font-size: 3.2rem;
+  }
+  .About {
+    padding: 20%;
+  }
+  .About .AboutTitel {
     font-size: 3rem;
+  }
+  .About .AboutText {
+    font-size: 1.4rem;
   }
   .Fevorit .FevoTitel {
     margin-top: 2rem;
@@ -610,6 +615,101 @@
   }
   .Fevorit .FevoTitel h2 {
     font-size: 1.8rem;
+  }
+  .Fevorit .Fevfood .item-1 {
+    width: 350px;
+  }
+  .Fevorit .Fevfood .item-1 .ImgFood1 {
+    height: 270px;
+  }
+  .Fevorit .Fevfood .item-1 .item-1-text h2 {
+    font-size: 2rem;
+  }
+  .Fevorit .Fevfood .item-1 .item-1-text p {
+    font-size: 1.2rem;
+  }
+  .Fevorit .Fevfood .items .item-2,
+  .Fevorit .Fevfood .items .item-3 {
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+  .Fevorit .Fevfood .items .item-2 .ImgFood,
+  .Fevorit .Fevfood .items .item-3 .ImgFood {
+    height: 270px;
+  }
+  .Fevorit .Fevfood .items .item-2 .FoodText,
+  .Fevorit .Fevfood .items .item-3 .FoodText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Fevorit .Fevfood .items .item-2 .FoodText h2,
+  .Fevorit .Fevfood .items .item-3 .FoodText h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .Fevorit .Fevfood .items .item-2 .FoodText p,
+  .Fevorit .Fevfood .items .item-3 .FoodText p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .Fevorit .Sweet .SweetBord .Sweet-1 h2,
+  .Fevorit .Sweet .SweetBord .Sweet-2 h2,
+  .Fevorit .Sweet .SweetBord .Sweet-3 h2 {
+    font-size: 1rem;
+  }
+  .Fevorit .Sweet .SweetBord .Sweet-1 p,
+  .Fevorit .Sweet .SweetBord .Sweet-2 p,
+  .Fevorit .Sweet .SweetBord .Sweet-3 p {
+    font-size: 1rem;
+  }
+  .TESTIMOLIAL {
+    height: 85vh;
+  }
+  .TESTIMOLIAL .TestTitel {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .TESTIMOLIAL .TestTitel i {
+    font-size: 5rem;
+  }
+  .TESTIMOLIAL .TestTitel h2 {
+    font-size: 2rem;
+  }
+  .TESTIMOLIAL .mySwiper {
+    height: 50vh;
+  }
+  .TESTIMOLIAL .mySwiper .swiper-wrapper {
+    margin-top: 1rem;
+  }
+  .TESTIMOLIAL .mySwiper .swiper-wrapper .swiper-slide p {
+    font-size: 1.3rem;
+  }
+  .TESTIMOLIAL .swiper-button-next,
+  .TESTIMOLIAL .swiper-button-prev {
+    visibility: hidden;
+  }
+  .Older .OlderImg {
+    width: 55%;
+  }
+  .Older .OlderForm {
+    width: 350px;
+  }
+}
+@media all and (max-width: 480px) {
+  .Cover .CoverText {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Cover .CoverText h2 {
+    font-size: 7rem;
+  }
+  .Cover .CoverText button {
+    font-size: 2rem;
+    margin-top: 1.5rem;
   }
 }
 * {

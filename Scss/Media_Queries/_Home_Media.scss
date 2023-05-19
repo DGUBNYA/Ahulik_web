@@ -14,14 +14,14 @@
       margin-top: 12rem;
     }
   }
-  .ImgFood {
-    height: 250px;
-    width: 250px;
-  }
-  .ImgFood1 {
-    height: 400px;
-    width: 400px;
-  }
+  // .ImgFood {
+  //   height: 250px;
+  //   width: 250px;
+  // }
+  // .ImgFood1 {
+  //   height: 400px;
+  //   width: 400px;
+  // }
 
   .SweetBord {
     justify-content: center;
@@ -82,6 +82,7 @@
   // FOOD
   .Fevorit {
     .FevoTitel {
+      margin-top: 3rem;
       img {
         height: 6rem;
       }
@@ -127,17 +128,32 @@
 @media all and (max-width: 600px) {
   .Cover {
     .CoverImg {
+      max-width: 65%;
       margin-top: 5rem;
     }
     .CoverText {
       margin-top: 2rem;
+      h2 {
+        font-size: 7rem;
+        line-height: 5rem;
+      }
+      h3 {
+        font-size: 4rem;
+      }
+      button {
+        font-size: 3.2rem;
+      }
     }
-    .CoverText h2 {
-      font-size: 6rem;
-      line-height: 5rem;
-    }
-    & h3 {
+  }
+
+  // ABOUT
+  .About {
+    padding: 20%;
+    .AboutTitel {
       font-size: 3rem;
+    }
+    .AboutText {
+      font-size: 1.4rem;
     }
   }
 
@@ -150,6 +166,120 @@
       }
       h2 {
         font-size: 1.8rem;
+      }
+    }
+    .Fevfood {
+      .item-1 {
+        width: 350px;
+        .ImgFood1 {
+          height: 270px;
+        }
+        .item-1-text {
+          h2 {
+            font-size: 2rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .items {
+        .item-2,
+        .item-3 {
+          flex-direction: column;
+
+          align-items: center;
+          width: 350px;
+          .ImgFood {
+            height: 270px;
+          }
+          .FoodText {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+              text-align: center;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 1.2rem;
+              text-align: center;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    //SWEET FOOD
+    .Sweet {
+      .SweetBord {
+        .Sweet-1,
+        .Sweet-2,
+        .Sweet-3 {
+          h2 {
+            font-size: 1rem;
+          }
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  // TESTIMONIAL
+  .TESTIMOLIAL {
+    height: 85vh;
+    .TestTitel {
+      margin-top: 5rem;
+      margin-bottom: 1.5rem;
+      i {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .mySwiper {
+      height: 50vh;
+      .swiper-wrapper {
+        margin-top: 1rem;
+        .swiper-slide {
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      visibility: hidden;
+    }
+  }
+
+  // OLDER
+  .Older {
+    .OlderImg {
+      width: 55%;
+    }
+    .OlderForm {
+      width: 350px;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .Cover {
+    .CoverText {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h2 {
+        font-size: 7rem;
+      }
+      button {
+        font-size: 2rem;
+        margin-top: 1.5rem;
       }
     }
   }
