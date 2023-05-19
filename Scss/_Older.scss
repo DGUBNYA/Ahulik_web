@@ -1,14 +1,15 @@
 .Older {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: var(--main-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
   .OlderImg {
-    height: 600px;
-    width: auto;
+    height: auto;
+    width: 40%;
   }
   .FormContainer {
     display: flex;
@@ -20,40 +21,39 @@
       font-size: 3rem;
       margin-bottom: 1rem;
     }
-  }
-}
-
-// FORM
-.OlderForm {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  input,
-  textarea {
-    border: none;
-    padding: 1rem;
-    margin: 5px 0;
-    border-radius: 25px 0px 25px 25px;
-    font-size: 1rem;
-    color: var(--main-color);
-    font-family: "TubicLight";
-  }
-  button {
-    width: 150px;
-    height: 40px;
-    border: none;
-    border-radius: 25px 0px 25px 25px;
-    margin-top: 15px;
-    background-color: var(--Secondery-color);
-    font-size: 2rem;
-    color: #fff;
-    font-family: "TubicBlack";
-    transition: transform 0.3s;
-    cursor: pointer;
-    &:hover {
-      background-color: #fff;
-      color: var(--main-color);
-      transform: rotate(5deg);
+    // FORM
+    .OlderForm {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      input,
+      textarea {
+        border: none;
+        padding: 1rem;
+        margin: 5px 0;
+        border-radius: 25px 0px 25px 25px;
+        font-size: 1rem;
+        color: var(--main-color);
+        font-family: "TubicLight";
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 25px 0px 25px 25px;
+        margin-top: 15px;
+        background-color: var(--Secondery-color);
+        font-size: 2rem;
+        color: #fff;
+        font-family: "TubicBlack";
+        transition: transform 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: #fff;
+          color: var(--main-color);
+          transform: rotate(5deg);
+        }
+      }
     }
   }
 }

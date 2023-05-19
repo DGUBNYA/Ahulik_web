@@ -10,9 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   .CoverImg {
-    height: 45rem;
-    width: auto;
+    max-height: 800px;
+    min-height: 200px;
+    max-width: 50%;
+    min-width: 70%;
+
     margin-top: 12rem;
   }
   .CoverText {

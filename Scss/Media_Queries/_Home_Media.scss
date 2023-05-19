@@ -1,8 +1,6 @@
 @media all and (max-width: 1200px) {
   .Cover {
     .CoverImg {
-      height: 38rem;
-      width: auto;
       margin-top: 10rem;
     }
   }
@@ -24,17 +22,23 @@
     height: 400px;
     width: 400px;
   }
+
+  .SweetBord {
+    justify-content: center;
+  }
 }
 
-//   Sweet Food
-
+//   Older
+// .Older {
+//   .OlderImg {
+//     height: 500px;
+//   }
+// }
 //Large devices (laptops/desktops, 992px and up)
 
 @media all and (max-width: 1024px) {
   .Cover {
     .CoverImg {
-      height: 30rem;
-      width: auto;
       margin-top: 10rem;
     }
   }
@@ -44,6 +48,109 @@
     }
     p {
       font-size: 1.2rem;
+    }
+  }
+}
+
+//   Older
+.Older {
+  .FormContainer {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .Cover {
+    flex-direction: column;
+    .CoverImg {
+      margin-top: 5rem;
+      margin-bottom: 0rem;
+    }
+    .CoverText {
+      margin-top: 2rem;
+    }
+    .CoverText h2 {
+      font-size: 9rem;
+      line-height: 5rem;
+    }
+    & h3 {
+      font-size: 5rem;
+    }
+  }
+  // FOOD
+  .Fevorit {
+    .FevoTitel {
+      img {
+        height: 6rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .Sweet {
+    .SweTitel {
+      img {
+        height: 6rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .SweetBord {
+    justify-content: center;
+  }
+  //   Older
+  .Older {
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+    .OlderImg {
+      margin-top: 3rem;
+    }
+    // FORM
+    .FormContainer {
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      .OlderForm {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .Cover {
+    .CoverImg {
+      margin-top: 5rem;
+    }
+    .CoverText {
+      margin-top: 2rem;
+    }
+    .CoverText h2 {
+      font-size: 6rem;
+      line-height: 5rem;
+    }
+    & h3 {
+      font-size: 3rem;
+    }
+  }
+
+  // FOOD
+  .Fevorit {
+    .FevoTitel {
+      margin-top: 2rem;
+      img {
+        height: 6rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
     }
   }
 }
